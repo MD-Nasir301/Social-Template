@@ -117,7 +117,7 @@ ul.main-menu li a i {
 }
 ul.main-menu li a:hover {
   color: rgb(0, 0, 0);
-  background: #fff;
+  background: rgb(207, 195, 195);
 }
 /* notification style ------ */
 .notification {
@@ -141,6 +141,7 @@ ul.main-menu li a:hover {
   font-size: 1.2rem;
   border-radius: 50%;
   box-shadow: 0px 0px 9px 0px grey;
+  z-index: 5555;
 }
 ul.notification-list {
   position: absolute;
@@ -151,19 +152,21 @@ ul.notification-list {
   opacity: 0;
   visibility: hidden;
   z-index: 9999;
+  min-width: 300px;
+  max-width: 300px;
 }
 ul.notification-list li {
-  min-width: 300px;
+  width: 100%;
 }
 ul.notification-list li a {
   color: #000;
   font-size: 1.8rem;
   padding: 8px 15px;
-  transition: .3s;
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -ms-transition: .3s;
-  -o-transition: .3s;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
 }
 ul.notification-list li a:hover {
   background: #CCCCCC;
@@ -178,6 +181,7 @@ ul.main-menu li:hover > ul {
   cursor: pointer;
   padding: 0px 20px;
   line-height: 50px;
+  position: relative;
 }
 .my-account:hover {
   background: rgb(251, 227, 227);
@@ -188,6 +192,40 @@ img.user-img {
   border-radius: 50%;
   margin-bottom: 2px;
 }
+/* my-account-options style --- */
+.my-account-nav {
+  position: absolute;
+  background: #fff;
+  width: 200px;
+  right: 10px;
+  box-shadow: 0px 0px 10px grey;
+  display: none;
+  z-index: 999999;
+}
+.my-account-nav li {
+  padding: 10px;
+  line-height: 20px;
+  transition: .2s;
+}
+.my-account-nav li a {
+  color: #000;
+  display: block;
+}
+.my-account-nav li:hover {
+  background:#CCCCCC;
+}
+.my-account:hover > ul.my-account-nav {
+  display: block;
+}
+
+/* responsive menu button style --- */
+button.res-menu-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+
 
 /* left-sidebar style =============================== */
 

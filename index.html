@@ -31,12 +31,12 @@
     <nav>      
       <!-- logo start -->
       <div class="logo">
-        <a href="#"><i class="fas fa-home"></i> Logo</a>
+        <a href="index.html"><i class="fas fa-home"></i> Logo</a>
       </div>
       <!-- logo end -->
 
       <!-- main-menu start -->
-      <ul class="main-menu">
+      <ul class="main-menu d-md-block">
         <li><a href="#" title="News"><i class="fas fa-globe"></i></a></li>
         <li><a href="#" title="Account Setting"><i class="fas fa-user"></i></a></li>
         <li><a href="#" title="Message"><i class="fas fa-envelope"></i></a></li>
@@ -63,21 +63,21 @@
       <!-- my-account start -->
       <div class="my-account" title="My Account">
         <img class="user-img" src="img/avatar2.png" alt="">
+        <ul class="my-account-nav">
+          <li class="d-block d-md-none"><a href="myProfile.html">My Profile</a></li>
+          <li><a href="#">Account Setting</a></li>
+          <li><a href="#">All Friends Request</a></li>
+          <li><a href="#">Bug Report</a></li>
+        </ul>
       </div>
       <!-- my-account end -->
+      
+      <!-- responsive menu btn start -->
+      <button class="res-menu-btn btn d-block d-md-none"><i class="fas fa-bars"></i></button>
+      <!-- responsive menu btn end -->
+
     </nav>
     <!-- main-nav End ------------- -->
-
-
-
-
-
-
-
-
-
-
-
 
   </header>
 
@@ -88,7 +88,7 @@
 
         <!-- left-sidebar Start ------------------>
         <div class="col-md-3">
-          <div class="left-sidebar-area">
+          <div class="left-sidebar-area d-none d-md-block">
 
             <!-- my-profile Area Start -->
             <div class="my-profile-area">
@@ -329,7 +329,7 @@
 
         <!-- right-sidebar Start ----------------->
         <div class="col-md-2">
-          <div class="right-sidebar-area">
+          <div class="right-sidebar-area d-none d-md-block">
 
             <div class="upcoming-event-box">
               <p>Upcoming Events:</p>

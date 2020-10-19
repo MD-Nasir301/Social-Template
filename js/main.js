@@ -11,6 +11,34 @@
   $(".post-input-field").click(function () {
     $(".post-input-field span").hide();
   });
+  
+
+
+    
+
+
+
+    $('.res-menu-btn').click(function go (){
+    $(".main-menu").toggle()
+    }
+
+    );
+
+  
+
+
+  // $(".res-menu-btn").toggle(
+  //   function(){
+  //    $('.res-menu-btn').css({"color":"red"})
+  //   },
+  //   function(){
+  //    $('.res-menu-btn').css({"color":"black"})
+  //   },
+
+  // });
+
+
+
 
   // One Page Nav---------------
   // var top_offset = $('.header-area').height() - 10;

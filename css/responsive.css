@@ -55,11 +55,27 @@
 
 /* small mobile :320px.(xs) */
 @media (max-width: 767px) {
+  nav {
+    height: 50px;
+    align-items: flex-start;
+  }
+  ul.main-menu {
+    position: absolute;
+    top: 50px;
+    display: none;
+    background: #4D636F;
+    right: 0;
+}
+ul.notification-list {
+  left: -220px;
+}
+.res-menu-btn {
+  padding: 14px 10px;
+}
 
-
-
-
-
+.main-content-wrapper {
+  padding: 0px 0px;
+}
 
 
 
