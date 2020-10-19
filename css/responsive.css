@@ -1,23 +1,67 @@
 /* Normal desktop :1200px. (xl) */
 @media (min-width: 1200px) and (max-width: 1500px) {
 
-
+}
 
 /* Normal desktop :992px. (lg) */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+  .container {
+    max-width: 100%;
+  }
+  
 
 }
 
 
 /* Tablet desktop :768px. (md) */
 @media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 100%;
+  }
+
+  ul.main-menu li a {
+    padding: 15px 18px;
+}
+.main-menu li.notification > a {
+  padding: 0px 15px;
+}
+.notifications-amount {
+  left: 65%;
+}
+
+.upcoming-event-box {
+  padding: 10px;
+}
+.upc-event-img {
+  margin-bottom: 8px;
+}
+.upcoming-event-box p {
+  font-size: 12px;
+}
+.upcoming-event-box p {
+  margin-bottom: 5px;
+}
+.upc-event-btn {
+  padding: 3px 0;
+}
+
+.friend-request-box p {
+  font-size: 13px;
+}
+
 
 }
 
 
 /* small mobile :320px.(xs) */
 @media (max-width: 767px) {
+
+
+
+
+
+
+
 
 
 }

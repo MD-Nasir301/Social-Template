@@ -19,14 +19,15 @@
 9.
 10. 
 */
-
-
+html {
+  font-size: 62.5%;
+}
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700');
  body {
 	font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-size: 15px;
+  font-size: 1.5rem;
 	font-weight: 400;
   color: #000;
 
@@ -40,9 +41,9 @@ h1,h2,h3,h4,h5,h6 {
 	text-transform: normal;
 }
 p {
-	font-size: 15px;
+	font-size: 1.5rem;
 	font-weight: normal;
-	line-height: 24px;
+	line-height: 2.4rem;
 	color: #030202;
 	margin-bottom: 15px;
 }
@@ -89,11 +90,11 @@ nav {
 /* logo style ------ */
 .logo a {
   color: #fff;
-  font-size: 18px;
+  font-size: 1.8rem;
   display: inline-block;
   background: #424648;
   padding: 0px 23px;
-  line-height: 50px;
+  line-height: 5rem;
 }
 .logo a i {
   margin-right: 10px;
@@ -112,7 +113,7 @@ ul.main-menu li a {
   padding: 15px 23px;
 }
 ul.main-menu li a i {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 ul.main-menu li a:hover {
   color: rgb(0, 0, 0);
@@ -128,7 +129,7 @@ ul.main-menu li a:hover {
 }
 .main-menu li.notification > a {
   padding: 0px 32px;
-  line-height: 51px;
+  line-height: 5rem;
 }
 .notifications-amount {
   position: absolute;
@@ -137,7 +138,7 @@ ul.main-menu li a:hover {
   background: #9ff121;
   padding: 0px 6px;
   display: block;
-  font-size: 12px;
+  font-size: 1.2rem;
   border-radius: 50%;
   box-shadow: 0px 0px 9px 0px grey;
 }
@@ -156,7 +157,7 @@ ul.notification-list li {
 }
 ul.notification-list li a {
   color: #000;
-  font-size: 18px;
+  font-size: 1.8rem;
   padding: 8px 15px;
   transition: .3s;
   -webkit-transition: .3s;
@@ -242,7 +243,7 @@ ul.profile-info-list li i {
   background: #7d97a5 ;
   border: none;
   color: #fff;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: normal;
   padding: 13px 15px;
   text-align: left;
@@ -280,7 +281,7 @@ button.btn i {
   padding: 0px 7px;
   margin-bottom: 2px;
   display: inline-block;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #fff;
 }
 
@@ -315,7 +316,7 @@ button.btn i {
 }
 .status-area h6 {
   color: gray;
-  font-size: 14px;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 .status-area .post-input-field {
@@ -324,7 +325,7 @@ button.btn i {
   min-height: 50px;
   padding: 10px;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .status-area .post-input-field span{
   color: gray;
@@ -434,7 +435,7 @@ img.frd-requestor-img {
     text-align: center;
     border: none;
     float: left;
-    font-size: 14px;
+    font-size: 1.4rem;
     background: #4caf50c4;
 }
 .frd-req-reject-btn {
@@ -466,7 +467,7 @@ img.frd-requestor-img {
   margin: 0;
 }
 .bug-info-box p i {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 /* footer style =========================== */
