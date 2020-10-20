@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,13 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/myProfileResponsive.css">
 </head>
+
 <body>
-  
-  <header> 
+
+  <header>
 
     <!-- main-nav Start ------------- -->
-    <nav>      
+    <nav>
       <!-- logo start -->
       <div class="logo">
         <a href="index.html"><i class="fas fa-home"></i> Logo</a>
@@ -59,7 +61,7 @@
         </ul>
       </div>
       <!-- my-account end -->
-      
+
       <!-- responsive menu btn start -->
       <button class="res-menu-btn btn d-block d-md-none"><i class="fas fa-bars"></i></button>
       <!-- responsive menu btn end -->
@@ -71,169 +73,164 @@
 
   <main>
 
-        <div class="col-md-12">
-          <div class="left-sidebar-area d-block">
+    <div class="col-md-12">
+      <div class="myProfile-page-wrapper left-sidebar-area d-block">
 
-            <!-- my-profile Area Start -->
-            <div class="my-profile-area">
-              <h3 class="profile-name">My Profile</h3>
-              <img class="profile-img" src="img/avatar3.png" alt="profile image">
-              <hr>
-                <ul class="profile-info-list">
-                  <li><i class="fas fa-pencil-alt"></i> Designer, UI</li>
-                  <li><i class="fas fa-home"></i> London, UK</li>
-                  <li><i class="fas fa-birthday-cake"></i> April 1, 1988</li>
-                </ul>
+        <!-- my-profile Area Start -->
+        <div class="my-profile-area">
+          <h3 class="profile-name">My Profile</h3>
+          <img class="profile-img" src="img/avatar3.png" alt="profile image">
+          <hr>
+          <ul class="profile-info-list">
+            <li><i class="fas fa-pencil-alt"></i> Designer, UI</li>
+            <li><i class="fas fa-home"></i> London, UK</li>
+            <li><i class="fas fa-birthday-cake"></i> April 1, 1988</li>
+          </ul>
+        </div>
+        <!-- my-profile Area End -->
+
+        <!-- groups,photos,events list Area Start -->
+        <div class="groups-events-area">
+          <div class="accordion" id="accordionExample">
+
+            <!-- My groups card -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-circle-notch"></i> My Groups
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  My Group
+                </div>
+              </div>
             </div>
-            <!-- my-profile Area End -->
 
-            <!-- groups,photos,events list Area Start -->
-            <div class="groups-events-area">
-              <div class="accordion" id="accordionExample">
+            <!-- My events card -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="far fa-calendar-check"></i> My Events
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  My Event
+                </div>
+              </div>
+            </div>
 
-                <!-- My groups card -->
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <i class="fas fa-circle-notch"></i> My Groups
-                      </button>
-                    </h2>
-                  </div>
-            
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                      My Group
-                    </div>
-                  </div>
-                </div>
-            
-                <!-- My events card -->
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <i class="far fa-calendar-check"></i> My Events
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                      My Event
-                    </div>
-                  </div>
-                </div>
-            
-                <!-- My photos card -->
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="fas fa-images"></i> My Photos
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <div class="my-photos-area">
-                        <div class="row no-gutters">
-                          <div class="col-md-6">
-                            <img class="my-single-photo" src="img/lights.jpg" alt="">
-                          </div>
-                          <div class="col-md-6">
-                            <img class="my-single-photo" src="img/nature.jpg" alt="">
-                          </div>
-                          <div class="col-md-6">
-                            <img class="my-single-photo" src="img/mountains.jpg" alt="">
-                          </div>
-                          <div class="col-md-6">
-                            <img class="my-single-photo" src="img/forest.jpg" alt="">
-                          </div>
-                          <div class="col-md-6">
-                            <img class="my-single-photo" src="img/nature.jpg" alt="">
-                          </div>
-                          <div class="col-md-6">
-                            <img class="my-single-photo" src="img/snow.jpg" alt="">
-                          </div>
-                        </div>
+            <!-- My photos card -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fas fa-images"></i> My Photos
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="my-photos-area">
+                    <div class="row no-gutters">
+                      <div class="col-md-6">
+                        <img class="my-single-photo" src="img/lights.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <img class="my-single-photo" src="img/nature.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <img class="my-single-photo" src="img/mountains.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <img class="my-single-photo" src="img/forest.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <img class="my-single-photo" src="img/nature.jpg" alt="">
+                      </div>
+                      <div class="col-md-6">
+                        <img class="my-single-photo" src="img/snow.jpg" alt="">
                       </div>
                     </div>
                   </div>
                 </div>
-            
               </div>
             </div>
-            <!-- groups,photos,events list Area End -->
 
-            <!-- interest Area Start -->
-            <div class="interest-area">
-              <h5>Interest</h5>
-                        
-              <span class="bg-dark">News</span>
-              <span class="bg-dark">W3Schools</span>
-              <span class="bg-dark">Labels</span>
-              <span class="bg-secondary">Games</span>
-              <span class="bg-secondary">Friends</span>
-              <span class="bg-success">Games</span>
-              <span class="bg-success">Friends</span>
-              <span class="bg-primary">Food</span>
-              <span class="bg-info">Design</span>
-              <span class="bg-info">Art</span>
-              <span class="bg-secondary">Photos</span>
-            </div>
-            <!-- interest Area End -->
-
-            <!-- alert Area Start -->
-            <div class="alert-area">
-              <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Hey!</strong>
-                <br>
-                <br>
-                People are looking at your profile. Find out who.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-            </div>
-            <!-- alert Area End -->
-            
-          </div>
-        </div>  
-
-
-        <div class="col-md-12">
-          <div class="upcoming-event-box">
-            <p>Upcoming Events:</p>
-            <img class="upc-event-img" src="img/forest.jpg" alt="">
-            <p class="upc-event-title">Holiday</p>
-            <p class="upc-event-date">Friday 15:00</p>
-            <button class="upc-event-btn btn">info</button>
           </div>
         </div>
+        <!-- groups,photos,events list Area End -->
 
+        <!-- interest Area Start -->
+        <div class="interest-area">
+          <h5>Interest</h5>
 
-
-      </main>
-
-      <footer>
-        <div class="footer-area">
-          <h5>Footer</h5>
+          <span class="bg-dark">News</span>
+          <span class="bg-dark">W3Schools</span>
+          <span class="bg-dark">Labels</span>
+          <span class="bg-secondary">Games</span>
+          <span class="bg-secondary">Friends</span>
+          <span class="bg-success">Games</span>
+          <span class="bg-success">Friends</span>
+          <span class="bg-primary">Food</span>
+          <span class="bg-info">Design</span>
+          <span class="bg-info">Art</span>
+          <span class="bg-secondary">Photos</span>
         </div>
-        <div class="copyright-area">
-          <p>Template collected from <a href="https://www.w3schools.com/">W3 School</a></p>
+        <!-- interest Area End -->
+
+        <!-- alert Area Start -->
+        <div class="alert-area">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Hey!</strong>
+            <br>
+            <br>
+            People are looking at your profile. Find out who.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
         </div>
-      </footer>
+        <!-- alert Area End -->
 
+      </div>
+    </div>
 
-      <script src="js/vendor/jquery-1.12.4.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
+    <div class="col-md-12">
+      <div class="upcoming-event-box">
+        <p>Upcoming Events:</p>
+        <img class="upc-event-img" src="img/forest.jpg" alt="">
+        <p class="upc-event-title">Holiday</p>
+        <p class="upc-event-date">Friday 15:00</p>
+        <button class="upc-event-btn btn">info</button>
+      </div>
+    </div>
 
+  </main>
 
+  <footer>
+    <div class="footer-area">
+      <h5>Footer</h5>
+    </div>
+    <div class="copyright-area">
+      <p>Template collected from <a href="https://www.w3schools.com/">W3 School</a></p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>

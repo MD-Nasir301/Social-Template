@@ -1,7 +1,7 @@
 /*
-  Theme Name: Name - Social HTML Template
+  Theme Name: Social HTML Template
   Author: nasir21b@gmail.com
-  Support: admin@gmail.com / nasir21b@gmail.com
+  Support: nasir21b@gmail.com
   Description: Creative  HTML5 template.
   Version: 1.0
 */
@@ -9,77 +9,91 @@
 /* CSS Index
 -----------------------------------
 1. Theme default
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9.
-10. 
+2. header style [> nav style, logo style, main-menu style, notification style, my-account style, my-account-options style, responsive menu button style ]
+
+3. left-sidebar style
+    > my-profile style
+    > groups, photos, events list area style
+    > my photos card style
+    > interest tags style
+    > alert area style
+4. main-content style
+    > status box area style 
+    > single-post-box style 
+    > single-post-box header style 
+    > single-post-box content style
+    > single-post-box footer style
+5. right-sidebar style
+    > upcoming-event-box style --------- 
+    > friend-request-box style 
+    > ADS-box style 
+    > bug-into-box style 
+6. footer style
+    > copyright-area style 
 */
 html {
   font-size: 62.5%;
 }
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700');
- body {
-	font-family: 'Open Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700");
+body {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 1.5rem;
-	font-weight: 400;
+  font-weight: 400;
   color: #000;
-
 }
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	color: #313131;
-	margin-top: 0px;
-	font-style: normal;
-	text-transform: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #313131;
+  margin-top: 0px;
+  font-style: normal;
+  text-transform: normal;
 }
 p {
-	font-size: 1.5rem;
-	font-weight: normal;
-	line-height: 2.4rem;
-	color: #030202;
-	margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 2.4rem;
+  color: #030202;
+  margin-bottom: 15px;
 }
 a,
 button {
-	color: #1696e7;
-	outline: medium none;
+  color: #1696e7;
+  outline: medium none;
 }
 ul {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 li {
-	list-style: none
+  list-style: none;
 }
 a:hover {
-	text-decoration: none;
-	outline: none;
+  text-decoration: none;
+  outline: none;
 }
 a:focus,
 .button:focus {
-	text-decoration: none;
-	outline: none;
+  text-decoration: none;
+  outline: none;
 }
 .mt-80 {
   margin-top: 80px;
 }
 
-
-
-
 /* header style =============================== */
+/* nav style ------ */
 nav {
   display: flex;
   height: 50px;
-  background: #4D636F;
+  background: #4d636f;
   align-items: center;
   position: fixed;
   top: 0;
@@ -103,7 +117,7 @@ nav {
   color: rgb(0, 0, 0);
   background: #d3dee2;
 }
-/* main-menu styel ------ */
+/* main-menu style ------ */
 ul.main-menu li {
   float: left;
 }
@@ -124,7 +138,7 @@ ul.main-menu li a:hover {
   position: relative;
 }
 .main-menu li.notification:hover > a {
-  background: #CCCCCC;
+  background: #cccccc;
   color: #000;
 }
 .main-menu li.notification > a {
@@ -162,14 +176,14 @@ ul.notification-list li a {
   color: #000;
   font-size: 1.8rem;
   padding: 8px 15px;
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  -ms-transition: .2s;
-  -o-transition: .2s;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
 }
 ul.notification-list li a:hover {
-  background: #CCCCCC;
+  background: #cccccc;
 }
 ul.main-menu li:hover > ul {
   opacity: 1;
@@ -205,14 +219,14 @@ img.user-img {
 .my-account-nav li {
   padding: 10px;
   line-height: 20px;
-  transition: .2s;
+  transition: 0.2s;
 }
 .my-account-nav li a {
   color: #000;
   display: block;
 }
 .my-account-nav li:hover {
-  background:#CCCCCC;
+  background: #cccccc;
 }
 .my-account:hover > ul.my-account-nav {
   display: block;
@@ -224,15 +238,15 @@ button.res-menu-btn {
   border: none;
   font-size: 16px;
 }
-
-
+button.res-menu-btn:focus {
+  box-shadow: none;
+}
 
 /* left-sidebar style =============================== */
 
-
 /* my-profile style ------ */
 .my-profile-area {
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   padding: 15px;
   border-radius: 3px;
   margin-bottom: 20px;
@@ -258,27 +272,25 @@ ul.profile-info-list li i {
   margin-right: 10px;
 }
 
-
 /* groups, photos, events list area style ----- */
 .groups-events-area {
   margin-bottom: 20px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .card {
   border: none;
-
 }
 .card-header {
   padding: 0;
-  background-color: rgba(0,0,0,.03);
-  border-bottom: 0px solid rgba(0,0,0,.125);
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 0px solid rgba(0, 0, 0, 0.125);
 }
 .card-body {
   padding: 10px 15px;
 }
 .btn {
   -moz-user-select: none;
-  background: #7d97a5 ;
+  background: #7d97a5;
   border: none;
   color: #fff;
   font-size: 1.5rem;
@@ -286,7 +298,7 @@ ul.profile-info-list li i {
   padding: 13px 15px;
   text-align: left;
   text-transform: capitalize;
-  border: 1px solid #7d97a5 ;
+  border: 1px solid #7d97a5;
   border-radius: 0px;
 }
 button.btn i {
@@ -311,7 +323,7 @@ button.btn i {
 /* interest tags style ------ */
 .interest-area {
   padding: 15px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 20px;
 }
 .interest-area span {
@@ -329,7 +341,7 @@ button.btn i {
 }
 .alert-warning {
   color: #080807;
-  background-color: #DFE5E8;
+  background-color: #dfe5e8;
   border-color: #adaca8;
 }
 .alert-dismissible {
@@ -351,7 +363,7 @@ button.btn i {
 }
 /* status box area style ----------- */
 .status-area {
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   padding: 20px 17px 10px;
   margin-bottom: 20px;
 }
@@ -368,7 +380,7 @@ button.btn i {
   line-height: 30px;
   font-size: 1.8rem;
 }
-.status-area .post-input-field span{
+.status-area .post-input-field span {
   color: gray;
 }
 .post-submit-btn {
@@ -382,7 +394,7 @@ button.btn i {
 .single-post-box {
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 /* single-post-box header style --- */
 .single-post-header {
@@ -416,12 +428,14 @@ button.btn i {
   margin-bottom: 15px;
 }
 /* single-post-box footer style --- */
-.like-btn, .comment-btn  {
+.like-btn,
+.comment-btn {
   padding: 7px 12px;
   background: #6d6d6d;
 }
-.like-btn:hover, .comment-btn:hover  {
-  background: #4C4C4C;
+.like-btn:hover,
+.comment-btn:hover {
+  background: #4c4c4c;
 }
 
 /* right-sidebar style ================================ */
@@ -430,7 +444,7 @@ button.btn i {
 .upcoming-event-box {
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 20px;
 }
 .upcoming-event-box p {
@@ -463,33 +477,35 @@ button.btn i {
 .friend-request-box {
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 20px;
 }
 img.frd-requestor-img {
   width: 50%;
   margin-bottom: 5px;
 }
-.frd-req-accept-btn, .frd-req-reject-btn {
-    width: 50%;
-    padding: 8px 0;
-    text-align: center;
-    border: none;
-    float: left;
-    font-size: 1.4rem;
-    background: #4caf50c4;
+.frd-req-accept-btn,
+.frd-req-reject-btn {
+  width: 50%;
+  padding: 8px 0;
+  text-align: center;
+  border: none;
+  float: left;
+  font-size: 1.4rem;
+  background: #4caf50c4;
 }
 .frd-req-reject-btn {
   background: #f44336b5;
 }
-.frd-req-accept-btn:hover, .frd-req-reject-btn:hover {
+.frd-req-accept-btn:hover,
+.frd-req-reject-btn:hover {
   background: #cccccc;
 }
 /* ADS-box style ---------- */
 .ads-box {
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 20px;
 }
 .ads-box p {
@@ -500,7 +516,7 @@ img.frd-requestor-img {
 .bug-info-box {
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 20px;
 }
 .bug-info-box p {
@@ -521,9 +537,10 @@ img.frd-requestor-img {
 .footer-area h5 {
   color: #fff;
 }
+/* copyright-area style --- */
 .copyright-area {
   padding: 20px;
-  background: #303E45;
+  background: #303e45;
 }
 .copyright-area p {
   color: #fff;

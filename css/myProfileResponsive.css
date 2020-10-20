@@ -1,4 +1,4 @@
-/* My Profile page responsive style =================================== */
+
 /* small mobile :320px.(xs) */
 @media (max-width: 767px) {
   main {
@@ -6,6 +6,8 @@
     margin: 70px auto 15px;
 }
 }
+
+/* Tablet & ALL desktop :min-768px. (md,lg,xl) */
 @media (min-width: 768px) {
   main {
     max-width: 600px;
